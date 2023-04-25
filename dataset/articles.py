@@ -10,7 +10,7 @@ class Articles:
     @staticmethod
     def _find_path_to_data(path_to_data: Optional[str] = None) -> str:
         if path_to_data is None:
-            return os["DATA_PATH"]
+            return os.environ["DATA_PATH"]
 
         return path_to_data
 
