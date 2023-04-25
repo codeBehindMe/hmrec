@@ -23,4 +23,4 @@ class Articles:
     def _construct_basepath_for_images(self, article_id: int) -> str:
         folder_key = str(article_id)[0:3]
 
-        return os.path.join(self.path_to_data, "images/", "folder_key")
+        return os.path.join(self.path_to_data, "images/", folder_key)
